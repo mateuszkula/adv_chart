@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots molecules/Charts default 1`] = `
+<div
+  height="auto"
+  options={
+    Object {
+      "chart": Object {
+        "id": "basic-bar",
+        "type": "line",
+      },
+      "stroke": Object {
+        "curve": "smooth",
+        "show": true,
+        "width": 2,
+      },
+      "xaxis": Object {
+        "categories": undefined,
+        "convertedCatToNumeric": true,
+      },
+      "yaxis": Array [
+        Object {
+          "title": Object {
+            "text": "Clicks",
+          },
+        },
+        Object {
+          "opposite": true,
+          "title": Object {
+            "text": "Impressions",
+          },
+        },
+      ],
+    }
+  }
+  series={
+    Array [
+      Object {
+        "data": undefined,
+        "name": "Clicks",
+      },
+      Object {
+        "data": undefined,
+        "name": "Impressions",
+      },
+    ]
+  }
+  type="line"
+  width="100%"
+/>
+`;
