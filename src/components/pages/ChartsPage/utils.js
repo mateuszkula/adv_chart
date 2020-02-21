@@ -44,3 +44,37 @@ export const filterData = (
     impressions
   };
 };
+
+export const transformRawData = rawRows => {
+  const datasources = new Set();
+  const campaigns = new Set();
+  const splittedRowData = [];
+
+  rawRows.forEach(row => {
+    if (row) {
+      const rowAsArray = row.split(",");
+      datasources.add(rowAsArray[1]);
+      campaigns.add(rowAsArray[2]);
+      splittedRowData.push(rowAsArray);
+    }
+  });
+
+  const campaignsForSelect = Array.from(campaigns).map(campaign => {
+    return {
+      value: campaign,
+      label: campaign
+    };
+  });
+
+  const datasourcesForSelect = Array.from(datasources).map(datasource => {
+    return {
+      value: datasource,
+      label: datasource
+    };
+  });
+  return {
+    splittedRowData,
+    campaignsForSelect,
+    datasourcesForSelect
+  };
+};
