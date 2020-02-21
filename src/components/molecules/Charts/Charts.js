@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import { PropTypes } from "prop-types";
 
 export const Charts = ({ dates, clicks, impressions }) => {
   const options = {
@@ -41,4 +42,10 @@ export const Charts = ({ dates, clicks, impressions }) => {
     }
   ];
   return <Chart options={options} series={series} />;
+};
+
+Charts.propTypes = {
+  dates: PropTypes.array,
+  clicks: PropTypes.array,
+  impressions: PropTypes.array
 };
