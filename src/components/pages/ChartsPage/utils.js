@@ -1,3 +1,11 @@
+const INDEXES = {
+  DATE: 0,
+  DATASOURCE: 1,
+  CAMPAIGN: 2,
+  CLICKS: 3,
+  IMPRESSIONS: 4
+};
+
 export const filterBy = (pickedValues, index) => element => {
   if (element) {
     return pickedValues.length ? pickedValues.includes(element[index]) : true;
@@ -16,16 +24,18 @@ export const filterData = (
   const impressions = [];
 
   rawDataRows
-    .filter(filterBy(selectedDatasources, 1))
-    .filter(filterBy(selectedCampaigns, 2))
+    .filter(filterBy(selectedDatasources, INDEXES.DATASOURCE))
+    .filter(filterBy(selectedCampaigns, INDEXES.CAMPAIGN))
     .forEach(element => {
-      if (dates.includes(element[0])) {
-        clicks[clicks.length - 1] += Number(element[3]);
-        impressions[impressions.length - 1] += Number(element[4]);
+      if (dates.includes(element[INDEXES.DATE])) {
+        clicks[clicks.length - 1] += Number(element[INDEXES.CLICKS]);
+        impressions[impressions.length - 1] += Number(
+          element[INDEXES.IMPRESSIONS]
+        );
       } else {
-        dates.push(element[0]);
-        clicks.push(Number(element[3]));
-        impressions.push(Number(element[4]));
+        dates.push(element[INDEXES.DATE]);
+        clicks.push(Number(element[INDEXES.CLICKS]));
+        impressions.push(Number(element[INDEXES.IMPRESSIONS]));
       }
     });
   return {
