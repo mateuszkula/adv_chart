@@ -32,5 +32,18 @@ export const Filters = ({
 );
 
 Filters.propTypes = {
-  children: PropTypes.node
+  onCampaignsChange: PropTypes.func,
+  onDatasourcesChange: PropTypes.func,
+  campaigns: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string,
+      label: PropTypes.string
+    })
+  ),
+  datasources: PropTypes.arrayOf(
+    PropTypes.shape({
+      value: PropTypes.string,
+      label: PropTypes.string
+    })
+  )
 };
