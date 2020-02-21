@@ -6,6 +6,7 @@ exports[`Storyshots molecules/Filters default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   height: 100%;
   padding: 20px;
   -webkit-flex-direction: column;
@@ -56,15 +57,15 @@ exports[`Storyshots molecules/Filters default 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        className=" css-yk16xz-control"
+        className="select_datasources__control css-yk16xz-control"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
       >
         <div
-          className=" css-1hwfws3"
+          className="select_datasources__value-container select_datasources__value-container--is-multi css-1hwfws3"
         >
           <div
-            className=" css-1wa3eu0-placeholder"
+            className="select_datasources__placeholder css-1wa3eu0-placeholder"
           >
             Select...
           </div>
@@ -72,7 +73,7 @@ exports[`Storyshots molecules/Filters default 1`] = `
             className="css-b8ldur-Input"
           >
             <div
-              className=""
+              className="select_datasources__input"
               style={
                 Object {
                   "display": "inline-block",
@@ -127,14 +128,14 @@ exports[`Storyshots molecules/Filters default 1`] = `
           </div>
         </div>
         <div
-          className=" css-1hb7zxy-IndicatorsContainer"
+          className="select_datasources__indicators css-1hb7zxy-IndicatorsContainer"
         >
           <span
-            className=" css-1okebmr-indicatorSeparator"
+            className="select_datasources__indicator-separator css-1okebmr-indicatorSeparator"
           />
           <div
             aria-hidden="true"
-            className=" css-tlfecz-indicatorContainer"
+            className="select_datasources__indicator select_datasources__dropdown-indicator css-tlfecz-indicatorContainer"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
@@ -164,15 +165,15 @@ exports[`Storyshots molecules/Filters default 1`] = `
       onKeyDown={[Function]}
     >
       <div
-        className=" css-yk16xz-control"
+        className="select_campaigns__control css-yk16xz-control"
         onMouseDown={[Function]}
         onTouchEnd={[Function]}
       >
         <div
-          className=" css-1hwfws3"
+          className="select_campaigns__value-container select_campaigns__value-container--is-multi css-1hwfws3"
         >
           <div
-            className=" css-1wa3eu0-placeholder"
+            className="select_campaigns__placeholder css-1wa3eu0-placeholder"
           >
             Select...
           </div>
@@ -180,7 +181,7 @@ exports[`Storyshots molecules/Filters default 1`] = `
             className="css-b8ldur-Input"
           >
             <div
-              className=""
+              className="select_campaigns__input"
               style={
                 Object {
                   "display": "inline-block",
@@ -235,14 +236,14 @@ exports[`Storyshots molecules/Filters default 1`] = `
           </div>
         </div>
         <div
-          className=" css-1hb7zxy-IndicatorsContainer"
+          className="select_campaigns__indicators css-1hb7zxy-IndicatorsContainer"
         >
           <span
-            className=" css-1okebmr-indicatorSeparator"
+            className="select_campaigns__indicator-separator css-1okebmr-indicatorSeparator"
           />
           <div
             aria-hidden="true"
-            className=" css-tlfecz-indicatorContainer"
+            className="select_campaigns__indicator select_campaigns__dropdown-indicator css-tlfecz-indicatorContainer"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
