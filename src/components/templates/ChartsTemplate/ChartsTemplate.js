@@ -11,5 +11,6 @@ export const ChartsTemplate = ({ charts, filters }) => (
 );
 
 ChartsTemplate.propTypes = {
-  children: PropTypes.node
+  filters: PropTypes.node,
+  charts: PropTypes.node
 };
